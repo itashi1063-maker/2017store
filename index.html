@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الألعاب | App Store 2017</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الشريط العلوي (App Header) -->
+    <header class="app-header">
+        <div class="header-top">
+            <span class="back-btn">&#8594;</span>
+            <h1 class="page-title">الألعاب (Action & Arcade)</h1>
+            <span class="search-icon">🔍</span>
+        </div>
+        <!-- شريط التصفح السريع -->
+        <div class="category-tabs">
+            <span class="tab active">الأفضل تقييماً</span>
+            <span class="tab">بدون إنترنت</span>
+            <span class="tab">مجانية بالكامل</span>
+        </div>
+    </header>
+
+    <!-- محتوى المتجر -->
+    <main class="store-content">
+
+        <!-- القسم الأول: الأكثر تقييماً -->
+        <section class="section">
+            <div class="section-header">
+                <h2>ألعاب كلاسيكية ومفضلة</h2>
+                <span class="more-btn">&#8594;</span>
+            </div>
+            <div class="games-grid">
+
+                <!-- 1. صب واي -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/zX9bDDtq/download.jpg" alt="صب واي">
+                    <div class="app-details">
+                        <span class="app-name">Subway Surfers</span>
+                        <span class="app-size">مبتكرة • 85 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Subway Surfers')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 2. بو -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/g0KnKVY0/images-(16).png" alt="بو">
+                    <div class="app-details">
+                        <span class="app-name">Pou</span>
+                        <span class="app-size">عناية • 24 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Pou')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 3. كرافت بلوك -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/Kzqj6m3k/images-(28).jpg" alt="كرافت بلوك">
+                    <div class="app-details">
+                        <span class="app-name">Craft Block 3D</span>
+                        <span class="app-size">بناء • 60 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Craft Block 3D')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 4. ماينكرافت -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/kMHDwXm3/images-(29).jpg" alt="ماينكرافت">
+                    <div class="app-details">
+                        <span class="app-name">Minecraft</span>
+                        <span class="app-size">مغامرات • 120 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Minecraft')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 5. لكي بلوك -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/8zQcQKcL/images-(30).jpg" alt="لكي بلوك">
+                    <div class="app-details">
+                        <span class="app-name">Lucky Block Race</span>
+                        <span class="app-size">تحديات • 45 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Lucky Block Race')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 6. ريد بول -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/Pxxrz0Vk/redball4.jpg" alt="ريد بول">
+                    <div class="app-details">
+                        <span class="app-name">Red Ball 4</span>
+                        <span class="app-size">منصات • 55 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Red Ball 4')">تنزيل</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- القسم الثاني: ألعاب بدون إنترنت (Offline) -->
+        <section class="section">
+            <div class="section-header">
+                <h2>ألعاب بدون إنترنت (Offline)</h2>
+                <span class="more-btn">&#8594;</span>
+            </div>
+            <div class="games-grid">
+
+                <!-- 7. أنغري بيرد -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/2SRyRcyT/images-(31).jpg" alt="انغري بيرد">
+                    <div class="app-details">
+                        <span class="app-name">Angry Birds</span>
+                        <span class="app-size">ألغاز • 95 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Angry Birds')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 8. توم جولد ران -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/4dS48wj4/images-(33).jpg" alt="توم جولد ران">
+                    <div class="app-details">
+                        <span class="app-name">Talking Tom Gold Run</span>
+                        <span class="app-size">ركض • 80 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Talking Tom Gold Run')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 9. تيلكينغ توم -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/qR5BmQWG/images-(34).jpg" alt="تيلكينغ توم">
+                    <div class="app-details">
+                        <span class="app-name">My Talking Tom</span>
+                        <span class="app-size">حيوانات • 70 MB</span>
+                        <button class="download-btn" onclick="downloadGame('My Talking Tom')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 11. سوبر بير -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/4NCHsNFn/images-(36).jpg" alt="سوبر بير">
+                    <div class="app-details">
+                        <span class="app-name">Super Bear Adventure</span>
+                        <span class="app-size">مغامرة • 110 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Super Bear Adventure')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 12. هانك المتكلم -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/FstkNsnh/images-(35).jpg" alt="هانك المتكلم">
+                    <div class="app-details">
+                        <span class="app-name">My Talking Hank</span>
+                        <span class="app-size">حيوانات • 85 MB</span>
+                        <button class="download-btn" onclick="downloadGame('My Talking Hank')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 13. موي -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/YSShb4hr/images-(37).jpg" alt="موي">
+                    <div class="app-details">
+                        <span class="app-name">Moy Virtual Pet</span>
+                        <span class="app-size">عناية • 30 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Moy Virtual Pet')">تنزيل</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- القسم الثالث: ألعاب المغامرات والسرعة -->
+        <section class="section">
+            <div class="section-header">
+                <h2>ألعاب المغامرة والسرعة</h2>
+                <span class="more-btn">&#8594;</span>
+            </div>
+            <div class="games-grid">
+
+                <!-- 14. سونيك دوم -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/Jhdtg1k4/images-(38).jpg" alt="سونيك دوم">
+                    <div class="app-details">
+                        <span class="app-name">Sonic Dash / Dash 2</span>
+                        <span class="app-size">سرعة • 75 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Sonic Dash')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 15. ماي بير -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/7PzbsrPp/images-(40).jpg" alt="ماي بير">
+                    <div class="app-details">
+                        <span class="app-name">My Bear / Bear Simulator</span>
+                        <span class="app-size">محاكاة • 50 MB</span>
+                        <button class="download-btn" onclick="downloadGame('My Bear')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 16. تمبل رن -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/1XDtfwYr/images-(39).jpg" alt="تمبل رن">
+                    <div class="app-details">
+                        <span class="app-name">Temple Run 2</span>
+                        <span class="app-size">ركض • 65 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Temple Run 2')">تنزيل</button>
+                    </div>
+                </div>
+
+                <!-- 17. بلانت ضد زومبي -->
+                <div class="game-item">
+                    <img class="app-icon" src="https://i.postimg.cc/dV50kqnn/images-(41).jpg" alt="بلانت ضد زومبي">
+                    <div class="app-details">
+                        <span class="app-name">Plants vs. Zombies</span>
+                        <span class="app-size">استراتيجية • 90 MB</span>
+                        <button class="download-btn" onclick="downloadGame('Plants vs. Zombies')">تنزيل</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
